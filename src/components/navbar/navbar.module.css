@@ -1,0 +1,37 @@
+.nav {
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    background: color-mix(in srgb, var(--mantine-color-dark-0), transparent 90%);
+
+    @mixin dark {
+        background: color-mix(in srgb, var(--mantine-color-dark-8), transparent 90%);
+    }
+}
+
+.icon {
+    width: rem(22px);
+    height: rem(22px);
+}
+
+.dark {
+    @mixin dark {
+        display: none;
+    }
+
+    @mixin light {
+        display: block;
+    }
+}
+
+.light {
+    @mixin light {
+        display: none;
+    }
+
+    @mixin dark {
+        display: block;
+    }
+}

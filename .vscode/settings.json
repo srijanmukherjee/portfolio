@@ -10,5 +10,13 @@
         "editor.useTabStops": true,
         "editor.tabSize": 4,
         "editor.defaultFormatter": "vscode.css-language-features"
-    }
+    },
+
+    "cssVariables.lookupFiles": [
+        "**/*.css",
+        "**/*.scss",
+        "**/*.sass",
+        "**/*.less",
+        "node_modules/@mantine/core/esm/index.css"
+    ]
 }
