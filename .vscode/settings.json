@@ -1,0 +1,14 @@
+{
+    "editor.formatOnSave": true,
+    "editor.detectIndentation": false,
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "vim.statusBarColorControl": false,
+
+    // use tabs for css
+    "[css]": {
+        "editor.detectIndentation": false,
+        "editor.useTabStops": true,
+        "editor.tabSize": 4,
+        "editor.defaultFormatter": "vscode.css-language-features"
+    }
+}
