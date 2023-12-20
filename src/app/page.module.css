@@ -1,29 +1,77 @@
 .hero {
-    justify-content: space-between;
     align-items: center;
-    flex-wrap: wrap-reverse;
+    justify-content: center;
+    flex-direction: column;
+    height: calc(100vh - 57.188px);
+    padding-top: var(--mantine-spacing-xl);
 
-    @media (max-width: $mantine-breakpoint-md) {
-        flex-direction: column-reverse;
+}
+
+.firstImpressionContainer {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    margin-top: -100px;
+}
+
+.firstImpressionContainer .imgContainer {
+    width: 250px;
+    border-radius: 50%;
+    overflow: hidden;
+
+    @mixin smaller-than $mantine-breakpoint-md {
+        width: 200px;
+    }
+
+    @mixin smaller-than $mantine-breakpoint-sm {
+        width: 180px;
     }
 }
 
-.hero > div {
-    flex: 1;
-}
-
-.img {
-    -webkit-mask-image: linear-gradient(var(--mantine-color-dark-9) 70%, transparent);
-    mask-image: linear-gradient(var(--mantine-color-dark-9), transparent);
-    user-select: none;
-    pointer-events: none;
-    border-radius: 50%;
+.firstImpressionContainer .imgContainer img {
     width: 100%;
     height: 100%;
-    min-width: min(rem(300), 100%);
+}
 
-    @mixin light {
-        -webkit-mask-image: linear-gradient(var(--mantine-color-dark-0) 70%, transparent);
-        mask-image: linear-gradient(var(--mantine-color-dark-0), transparent);
+.firstImpressionContainer .name {
+    width: max-content;
+    margin-top: -10px;
+    padding: var(--mantine-spacing-lg);
+    padding-bottom: 0;
+    letter-spacing: 20px;
+    text-transform: uppercase;
+    font-size: rem(40);
+    font-weight: bold;
+    text-align: center;
+
+    /* Convert these media queries to a single clamp() function */
+    @mixin smaller-than $mantine-breakpoint-md {
+        font-size: rem(25);
     }
+
+    @mixin smaller-than $mantine-breakpoint-sm {
+        width: 100%;
+        font-size: rem(20);
+        letter-spacing: 10px;
+    }
+}
+
+.introTypewriter {
+    font-size: clamp(rem(15), 2vw, rem(25));
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.introTypewriter span {
+    user-select: none !important;
+    -webkit-user-select: none;
+    word-break: keep-all;
+    width: max-content;
+}
+
+.introTypewriter .ends {
+    font-size: 1.4em;
+    color: var(--mantine-color-blue-5)
 }

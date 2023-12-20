@@ -24,7 +24,7 @@ export default function Navbar() {
             <Container py={10} size={containerSize}>
                 <Flex justify="space-between" align="center">
                     <header>
-                        <h1 style={{ margin: 0 }}>srijanmukherjee</h1>
+                        <h1 style={{ margin: 0, fontWeight: "normal" }}>srijanmukherjee</h1>
                     </header>
                     <Box>
                         <ActionIcon
