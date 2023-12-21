@@ -5,7 +5,7 @@
     height: min-content;
     padding-top: var(--mantine-spacing-xl);
     gap: 2em;
-    margin-bottom: var(--mantine-spacing-xl);
+    margin-bottom: calc(2 * var(--mantine-spacing-xl));
 }
 
 .firstImpressionContainer {
