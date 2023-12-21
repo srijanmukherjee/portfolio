@@ -2,9 +2,9 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    height: calc(100vh - 57.188px);
+    height: 80vh;
     padding-top: var(--mantine-spacing-xl);
-
+    gap: 2em;
 }
 
 .firstImpressionContainer {
@@ -12,7 +12,6 @@
     flex-direction: column;
     align-items: center;
     justify-items: center;
-    margin-top: -100px;
 }
 
 .firstImpressionContainer .imgContainer {
@@ -45,7 +44,7 @@
     font-weight: bold;
     text-align: center;
 
-    /* Convert these media queries to a single clamp() function */
+    /* TODO: Convert these media queries to a single clamp() function */
     @mixin smaller-than $mantine-breakpoint-md {
         font-size: rem(25);
     }
