@@ -1,0 +1,27 @@
+.container {
+    padding: var(--mantine-spacing-sm);
+    align-items: center;
+    background-color: var(--mantine-color-gray-9);
+    transition: background-color 75ms ease-in-out;
+    border-radius: var(--mantine-radius-md);
+    gap: var(--mantine-spacing-sm);
+    min-width: rem(200);
+
+    @mixin hover {
+        background-color: var(--mantine-color-gray-8);
+    }
+
+    @mixin smaller-than $mantine-breakpoint-sm {
+        flex: .5;
+    }
+
+    @mixin smaller-than $mantine-breakpoint-xs {
+        width: 100%;
+        flex: 1;
+    }
+}
+
+.container img {
+    user-select: none;
+    pointer-events: none;
+}
