@@ -8,6 +8,7 @@ import {
     Flex,
     useComputedColorScheme,
     useMantineColorScheme,
+    Text,
 } from "@mantine/core";
 import { IconSun, IconMoon } from "@tabler/icons-react";
 import cx from "clsx";
@@ -28,7 +29,10 @@ export default function Navbar() {
                                 fontWeight: "normal",
                                 fontSize: "clamp(1.2rem, 2vw, 1.6rem)",
                             }}>
-                            srijanmukherjee
+                            <Text span inherit fw="bold">
+                                srijan
+                            </Text>
+                            mukherjee
                         </h1>
                     </header>
                     <Box>
