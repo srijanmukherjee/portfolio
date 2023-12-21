@@ -2,9 +2,10 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    height: 80vh;
+    height: min-content;
     padding-top: var(--mantine-spacing-xl);
     gap: 2em;
+    margin-bottom: var(--mantine-spacing-xl);
 }
 
 .firstImpressionContainer {

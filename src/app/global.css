@@ -1,6 +1,11 @@
+:root {
+    --navbar-height: rem(60);
+}
+
 body {
     transition: background-color 100ms ease-in !important;
     scroll-behavior: smooth;
+    padding-top: var(--navbar-height);
 }
 
 body::after {

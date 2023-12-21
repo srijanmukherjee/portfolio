@@ -19,7 +19,7 @@ export default function Navbar() {
 
     return (
         <nav className={classes.nav}>
-            <Container py={10} size={containerSize}>
+            <Container py={10} size={containerSize} style={{ flex: 1 }}>
                 <Flex justify="space-between" align="center">
                     <header>
                         <h1
