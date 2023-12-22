@@ -27,7 +27,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             <head>
                 <title>Srijan Mukherjee</title>
                 <meta property="description" content="Srijan Mukherjee's Portfolio Website" />
-                <meta property="og:image" content="/favicon.ico"></meta>
+                <meta
+                    property="og:image"
+                    content="https://www.srijanmukherjee.in/favicon.ico"></meta>
                 <meta property="og:title" content="Srijan Mukherjee Portfolio"></meta>
                 <meta property="og:description" content="Srijan Mukherjee's Portfolio Website" />
                 <meta property="og:url" content="srijanmukherjee.in"></meta>
