@@ -5,17 +5,17 @@ import Image from "next/image";
 import classes from "./skillcard.module.css";
 
 export interface SkillCardProps {
-    src: string | StaticImageData;
+    img: string | StaticImageData;
     alt: string;
     value: string;
     color?: MantineColor;
 }
 
-export default function SkillCard({ src, value, color = "white", alt }: SkillCardProps) {
+export default function SkillCard({ img, value, color = "white", alt }: SkillCardProps) {
     return (
         <Flex className={classes.container}>
             <ThemeIcon size="xl" radius="md" color={color} variant="light">
-                <Image src={src} alt={alt} width={28} placeholder="blur" />
+                <Image src={img} alt={alt} width={28} placeholder="blur" />
             </ThemeIcon>
             {value}
         </Flex>
