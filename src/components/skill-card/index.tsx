@@ -15,7 +15,7 @@ export default function SkillCard({ img, value, color = "white", alt }: SkillCar
     return (
         <Flex className={classes.container}>
             <ThemeIcon size="xl" radius="md" color={color} variant="light">
-                <Image src={img} alt={alt} width={28} placeholder="blur" />
+                <Image src={img} alt={alt} width={28} />
             </ThemeIcon>
             {value}
         </Flex>
