@@ -25,14 +25,15 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     return (
         <html lang="en">
             <head>
-                <title>Srijan Mukherjee</title>
-                <meta property="description" content="Srijan Mukherjee's Portfolio Website" />
+                <title>Srijan Mukherjee Portfolio</title>
                 <meta
-                    property="og:image"
-                    content="https://www.srijanmukherjee.in/favicon.ico"></meta>
-                <meta property="og:title" content="Srijan Mukherjee Portfolio"></meta>
+                    property="description"
+                    content="Srijan Mukherjee is a passionate and dedicated software developer having a deep interest in crafting innovative solutions through code."
+                />
+                <meta property="og:image" content="https://www.srijanmukherjee.in/favicon.ico" />
+                <meta property="og:title" content="Srijan Mukherjee Portfolio" />
                 <meta property="og:description" content="Srijan Mukherjee's Portfolio Website" />
-                <meta property="og:url" content="srijanmukherjee.in"></meta>
+                <meta property="og:url" content="srijanmukherjee.in" />
                 <ColorSchemeScript defaultColorScheme="auto" />
             </head>
             <body>
