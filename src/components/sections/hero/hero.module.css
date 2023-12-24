@@ -73,5 +73,5 @@
 
 .introTypewriter .ends {
     font-size: 1.4em;
-    color: var(--mantine-color-blue-5)
+    color: var(--mantine-color-blue-5);
 }
