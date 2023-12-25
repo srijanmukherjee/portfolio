@@ -19,13 +19,11 @@ import {
     IconBrandGmail,
     IconBrandLinkedin,
     IconBrandTwitter,
-    IconBrandWhatsapp,
     IconDeviceMobile,
     IconPhone,
-    IconPhoneCall,
-    IconRecordMail,
 } from "@tabler/icons-react";
 import classes from "./contact.module.css";
+import * as links from "@/data/links";
 
 export default function ContactSection() {
     return (
@@ -103,9 +101,7 @@ export default function ContactSection() {
                                                 Linkedin
                                             </Table.Th>
                                             <Table.Td>
-                                                <Anchor
-                                                    href="https://www.linkedin.com/in/srijanmukherjee/"
-                                                    target="_blank">
+                                                <Anchor href={links.linkedin} target="_blank">
                                                     in/srijanmukherjee
                                                 </Anchor>
                                             </Table.Td>
@@ -137,9 +133,7 @@ export default function ContactSection() {
                                                 Twitter
                                             </Table.Th>
                                             <Table.Td>
-                                                <Anchor
-                                                    href="https://twitter.com/MuSrijan"
-                                                    target="_blank">
+                                                <Anchor href={links.twitter} target="_blank">
                                                     @MuSrijan
                                                 </Anchor>
                                             </Table.Td>

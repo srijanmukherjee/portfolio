@@ -6,6 +6,7 @@ import "@mantine/core/styles.css";
 import "./global.css";
 import Navbar from "@/components/navbar";
 import { useEffect } from "react";
+import Footer from "@/components/footer";
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
     // useEffect(() => {
@@ -40,6 +41,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                 <MantineProvider theme={theme} withCssVariables defaultColorScheme="dark">
                     <Navbar />
                     {children}
+                    <Footer />
                 </MantineProvider>
             </body>
         </html>
