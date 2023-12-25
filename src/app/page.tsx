@@ -8,25 +8,33 @@ import HeroSection from "@/components/sections/hero";
 import BioSection from "@/components/sections/bio";
 import AboutSection from "@/components/sections/about";
 import FocusSection from "@/components/sections/focus";
+import ProjectsSection from "@/components/sections/projects";
+import ContactSection from "@/components/sections/contact";
 
 export default function Home() {
     return (
-        <Container pb={20} size={containerSize}>
-            <HeroSection />
+        <>
+            <Container pb={20} size={containerSize}>
+                <HeroSection />
 
-            <Stack gap={rem(50)}>
-                {/* About section */}
-                <AboutSection />
+                <Stack gap={rem(50)}>
+                    {/* About section */}
+                    <AboutSection />
 
-                {/* Bio/Timeline  */}
-                <BioSection />
+                    {/* Bio/Timeline  */}
+                    <BioSection />
 
-                {/* Focus */}
-                <FocusSection />
+                    {/* Focus */}
+                    <FocusSection />
 
-                {/* Skills */}
-                <Skills />
-            </Stack>
-        </Container>
+                    {/* Skills */}
+                    <Skills />
+
+                    {/* Projects */}
+                    <ProjectsSection />
+                </Stack>
+            </Container>
+            <ContactSection />
+        </>
     );
 }

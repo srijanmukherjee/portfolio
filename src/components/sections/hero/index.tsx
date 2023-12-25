@@ -29,7 +29,7 @@ export default function HeroSection() {
                 </Text>
             </Flex>
             <Group wrap="wrap" justify="center">
-                <Button variant="gradient" size="xl" my="xl">
+                <Button variant="gradient" size="xl" my="xl" component={Link} href="#contact">
                     Reach out
                 </Button>
                 <Button
