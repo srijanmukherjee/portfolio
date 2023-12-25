@@ -11,6 +11,7 @@ import nodejsIcon from "@/assets/img/technologies/nodejs.png";
 import springIcon from "@/assets/img/technologies/spring.png";
 import postgresqlIcon from "@/assets/img/technologies/postgresql.png";
 import mongodbIcon from "@/assets/img/technologies/mongodb.png";
+import firebaseIcon from "@/assets/img/technologies/firebase.png";
 
 export const languages: SkillCardProps[] = [
     {
@@ -81,6 +82,12 @@ export const technologies: SkillCardProps[] = [
         color: "blue",
         img: springIcon,
         alt: "Spring Boot",
+    },
+    {
+        value: "Firebase",
+        color: "yellow",
+        img: firebaseIcon,
+        alt: "Firebase",
     },
 ];
 
