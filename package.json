@@ -9,6 +9,7 @@
         "lint": "next lint"
     },
     "dependencies": {
+        "@hcaptcha/react-hcaptcha": "^1.9.2",
         "@mantine/core": "^7.2.2",
         "@mantine/hooks": "^7.2.2",
         "@tabler/icons-react": "^2.42.0",
@@ -17,6 +18,7 @@
         "react": "^18",
         "react-dom": "^18",
         "react-simple-typewriter": "^5.0.1",
+        "resend": "^2.0.0",
         "sharp": "^0.33.1"
     },
     "devDependencies": {
