@@ -181,7 +181,7 @@ export default function ContactSection() {
                                 </Button>
                             </Stack>
                             <HCaptcha
-                                sitekey="2623e531-f84d-42b0-b20f-378c8e2895ee"
+                                sitekey={process.env.NEXT_PUBLIC_HCAPTCHA_SITEKEY}
                                 ref={captchaRef}
                                 size="invisible"
                                 theme="dark"
