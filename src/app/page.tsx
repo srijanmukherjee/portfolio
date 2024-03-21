@@ -25,7 +25,7 @@ export default function Home() {
                     <BioSection />
 
                     {/* Focus */}
-                    <FocusSection />
+                    {/* <FocusSection /> */}
 
                     {/* Skills */}
                     <Skills />

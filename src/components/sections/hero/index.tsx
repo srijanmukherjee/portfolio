@@ -8,6 +8,7 @@ import myself from "@/assets/img/me.jpg";
 
 import classes from "./hero.module.css";
 import { typewritterIntros } from "@/data/hero";
+import { IconBrandGithub, IconBrandLinkedin, IconBrandTwitter } from "@tabler/icons-react";
 
 export default function HeroSection() {
     return (
@@ -39,6 +40,32 @@ export default function HeroSection() {
                     href={links.resume}
                     target="_blank">
                     Resume
+                </Button>
+            </Group>
+            <Group wrap="wrap" justify="center" mt={-15}>
+                <Button
+                    size=""
+                    variant="subtle"
+                    component={Link}
+                    target="_blank"
+                    href={links.github}>
+                    <IconBrandGithub />
+                </Button>
+                <Button
+                    size=""
+                    variant="subtle"
+                    component={Link}
+                    target="_blank"
+                    href={links.linkedin}>
+                    <IconBrandLinkedin />
+                </Button>
+                <Button
+                    size=""
+                    variant="subtle"
+                    component={Link}
+                    target="_blank"
+                    href={links.twitter}>
+                    <IconBrandTwitter />
                 </Button>
             </Group>
         </Flex>

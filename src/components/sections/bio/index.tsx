@@ -5,6 +5,7 @@ import {
     IconBrandUpwork,
     IconSchool,
     IconBabyBottle,
+    IconBriefcase,
 } from "@tabler/icons-react";
 
 export default function BioSection() {
@@ -14,7 +15,16 @@ export default function BioSection() {
                 <IconTree size={32} /> Bio
             </Title>
 
-            <Timeline reverseActive active={3} bulletSize={32} lineWidth={2}>
+            <Timeline reverseActive active={4} bulletSize={32} lineWidth={2}>
+                <Timeline.Item bullet={<IconBriefcase size={18} />} title="SDE intern">
+                    <Text c="dimmed" size="sm">
+                        Equal.in
+                    </Text>
+                    <Text size="xs" mt={4}>
+                        July, 2024 - Present
+                    </Text>
+                </Timeline.Item>
+
                 <Timeline.Item
                     bullet={<IconDeviceLaptop size={18} />}
                     title="Computer Science and Engineering Degree">

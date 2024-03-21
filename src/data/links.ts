@@ -1,5 +1,5 @@
 export const resume =
-    "https://drive.google.com/file/d/1vDqJaHle4oQbTlT0zd06O64LvytLLlWk/view?usp=sharing";
+    "https://drive.google.com/file/d/1VG2x5RlmEWgijAOhkRndiBFGYvraMcDn/view?usp=sharing";
 
 export const github = "https://www.github.com/srijanmukherjee";
 

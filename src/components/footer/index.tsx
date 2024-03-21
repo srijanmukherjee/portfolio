@@ -8,7 +8,7 @@ export default function Footer() {
     return (
         <Container size={containerSize} py="lg">
             <Flex justify="space-between">
-                <Text>&copy; Srijan Mukherjee 2023</Text>
+                <Text>&copy; Srijan Mukherjee 2024</Text>
                 <Group>
                     <Anchor href={links.github} c="dimmed">
                         Github
